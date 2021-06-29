@@ -194,8 +194,13 @@
 				    <header class="docs-header">
 					    <h1 class="docs-heading">Arquitetura</h1>
 					    <section class="docs-intro">
-						    <img src="./assets/images/ArquiteturaES.png" width="1100" height="800">
 						</section><!--//docs-intro-->
+						<h3>Arquitetura de microsserviços</h3>
+						<br></br>
+						<img src="./assets/images/arq_mic.png" width="700" height="950">
+						<h3 style="margin-top: 60px;">Arquitetura de tecnologias</h3>
+						<br></br>
+						<img src="./assets/images/arq_tec.png" width="1100" height="800">
 				    </header>
 				<!--//section-->
 			    </article><!--//docs-article-->
@@ -260,8 +265,15 @@
 				    <header class="docs-header">
 					    <h1 class="docs-heading">Testes</h1>
 					    <section class="docs-intro">
+							Para verificarmos se o nosso sistema funciona corretamente, incluímos diversos testes que vão assegurar que os diferentes componentes têm o comportamento esperado. Este processo incluiu testes unitários e testes de integração desenvolvidos para avaliar da melhor maneira, todo o <i>lifecyle</i> da aplicação.
 						</section><!--//docs-intro-->
-				    </header>
+						<br></br>
+						<p>Para os testes unitários, foram desenvolvidas aplicações de teste, para os diferentes componentes, utilizando <b>JUnit</b>, com a anotação @Test para os declarar. Para o componente do <b>Producer</b>, a aplicação de teste fica encarregue de verificar se a comunicação com a API do Opensky e envio dos dados são, individualmente, bem sucedidos.</p>
+						<p>Já para o componente do <b>Processer</b>, verificamos se os dados recebidos estão bem estruturados e não são inválidos, como: voos repetidos; partidas/chegadas maiores que o número total de voos; verificar se a velocidade do avião é válida; bem como confirmar que as partidas vêm do aeroporto dos Emirados Árabes Unidos e que as chegadas não provêm desse mesmo aeroporto. Além disso, também fazemos testes para verificar o bom funcionamento do módulo da base de dados, tanto individualmente como integrado no sistema.
+						</p>
+						<p>Para testarmos a integração do sistema e os seus casos de uso, seguimos uma abordagem <b>Behavior Driven Development (BDD)</b>, recorrendo à ferramenta de software <b>Cucumber</b>. Os casos de uso que decidimos avaliar, foram os seguintes: observar o país mais popular; observar as chegadas; observar os voos no mapa, ou seja, foram de encontro aos cenários apresentados anteriormente. Estes casos de uso, permitiram-nos testar a invocação de eventos, o processamento dos dados e a visualização de imagem por parte do utilizador. Para testar o envio de mensagens, recorremos à utilização da biblioteca de <b>Embedded Kafka</b>, que nos permite executar uma instância de um servidor kafka, sem dependermos de um servidor externo que possa comprometer os testes, pois podemos não ter controlo sobre o mesmo.</p>
+						<p>Dadas as limitações de compatibilidade entre o JUnit 5 e o Cucumber, não é possível correr os dois tipos de testes em simultâneo. Por default, o comando mvn test irá correr todos os testes, exceto os de Cucumber. Para correr os de Cucumber, é preciso excluir o módulo “junit-jupiter-engine” do módulo “spring-boot-starter-test”.</p>
+					</header>
 				<!--//section-->
 			    </article><!--//docs-article-->
 				<article class="docs-article" id="section-7">
