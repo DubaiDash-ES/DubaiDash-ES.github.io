@@ -39,12 +39,7 @@
 	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon mr-2" src="assets/images/coderdocs-logo.svg" alt="logo"><span class="logo-text">DubaiDash<span class="text-alt">Docs</span></span></a></div>    
                 </div><!--//docs-logo-wrapper-->
 	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
-	                <div class="top-search-box d-none d-lg-flex">
-		                <form class="search-form">
-				            <input type="text" placeholder="Pesquisa pela documentação..." name="search" class="form-control search-input">
-				            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
-				        </form>
-	                </div>
+	                
 	
 					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
 						<li class="list-inline-item"><a href="https://github.com/DubaiDash-ES"><i class="fab fa-github fa-fw"></i></a></li>
@@ -67,9 +62,20 @@
 		    <nav id="docs-nav" class="docs-nav navbar">
 			    <ul class="section-items list-unstyled nav flex-column pb-3">
 				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder mr-2"><i class="fas fa-map-signs"></i></span>Introdução</a></li>
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder mr-2"><i class="fas fa-arrow-down"></i></span>A nossa visão</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder mr-2"><i class="fas fa-glasses"></i></span>A nossa visão</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Personas</a></li>
-					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder mr-2"><i class="fas fa-arrow-down"></i></span>Arquitetura</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Cenários</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder mr-2"><i class="fas fa-list-ul"></i></span>Requisitos</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">Perspetiva do Produto</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">Funcionalidades do Sistema</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">Interfaces de Software</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-4">Interfaces de Comunicação</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-5">Requisitos de Qualidade</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder mr-2"><i class="fas fa-sitemap"></i></span>Arquitetura</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span class="theme-icon-holder mr-2"><i class="fas fa-laptop-code"></i></span>Developer</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span class="theme-icon-holder mr-2"><i class="fas fa-cubes"></i></span>Testes</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder mr-2"><i class="fas fa-cogs"></i></span>Operações</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-8"><span class="theme-icon-holder mr-2"><i class="fas fa-highlighter"></i></span>Considerações finais</a></li>
 				    <!--<li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Cenários</a></li>-->
 			    </ul>
 
@@ -79,12 +85,11 @@
 		    <div class="container">
 			    <article class="docs-article" id="section-1">
 				    <header class="docs-header">
-					    <h1 class="docs-heading">Introdução <span class="docs-time">Last updated: 2019-06-01</span></h1>
+					    <h1 class="docs-heading">Introdução <span class="docs-time">Última atualização: 29-06-2021</span></h1>
 					    <section class="docs-intro">
 						    <p>Bem vindo ao aeroporto internacional do Dubai!</p>
-							<p><b>Dubai Dash</b> é o nosso sistema, cujo foco é o aeroporto do Dubai e todos os voos que passam no aeroporto ou no espaço aéreo do mesmo. O nosso objetivo é fornecer uma ferramenta de análise, em tempo real, dos voos que têm como destino ou ponto de partida o aeroporto, permitindo visualizar todo o seu trajeto e estatísticas do voo, e também aqueles voos que já aterraram, uma vez que estes fornecem informações bastante úteis, entre elas, as origens e destinos mais populares, a duração média dos voos, as horas de maior afluência, etc. 
-							</p>
-							<p>O nosso sistema fornece um conjunto de dashboards que irá permitir ao utilizador recolher toda a informação necessária num só local, ao invés de ter de recorrer a vários. O acesso à informação mencionada anteriormente será realizado de forma direta e simplificada, permitindo, ao utilizador, visualizar, por um lado, os dados em tempo real e trajeto, por outro, analisar dados estatísticos, recolhidos a partir do momento de inicialização do sistema até ao atual. O principal desafio do nosso sistema é ser capaz de recolher dados a partir da API Opensky e, através desta, processar e retornar informação ao nosso sistema, em tempo útil, permitindo ao utilizador, por exemplo, visualizar a posição e trajetória atual dos voos.</p>
+							<p><b>Dubai Dash</b> é o nosso sistema, cujo foco é o aeroporto do Dubai e todos os voos que passam no aeroporto ou no espaço aéreo do mesmo. O nosso objetivo é fornecer uma ferramenta de análise, em tempo real, dos voos que têm como destino ou ponto de partida o aeroporto, permitindo visualizar a sua posição e estatísticas do voo, e também aqueles voos que já aterraram, uma vez que estes fornecem informações bastante úteis, como por exemplo os países de origem mais populares. </p>
+							<p>O nosso sistema fornece um conjunto de dashboards que irá permitir ao utilizador recolher toda a informação necessária num só local, ao invés de ter de recorrer a vários. O acesso à informação mencionada anteriormente será realizada de forma direta e simplificada, permitindo ao utilizador visualizar, por um lado, os dados em tempo real, por outro, analisar dados estatísticos, recolhidos a partir do momento de inicialização do sistema até ao atual. O principal desafio do nosso sistema é ser capaz de recolher dados a partir da API Opensky e, através desta, processar e retornar informação ao nosso sistema, em tempo útil, permitindo ao utilizador, por exemplo, visualizar a posição e informação acerca dos voos.</p>
 						</section><!--//docs-intro-->
 						
 						
@@ -93,39 +98,200 @@
 				    <header class="docs-header">
 					    <h1 class="docs-heading">A nossa visão</h1>
 					    <section class="docs-intro">
-						    <p>
-								Dubai Dash, atualmente em desenvolvimento, tem como objetivo vir a ser um sistema que tem como principal foco a apresentação de uma diversa informação acerca do aeroporto internacional do Dubai e voos a ele associados, fornecendo diversas funcionalidades que permitam aos utilizadores visualizar informações relativas a voos em decurso, e também sobre aqueles que já terminaram, sendo derivada informação estatística a partir dos mesmos. O sistema será composto principalmente por duas dashboards distintas, cada uma com o seu propósito. A dashboard principal será composta principalmente por um mapa interativo que permite ao utilizador visualizar os voos em decurso, a sua localização e trajetória atual, e selecionar um voo específico para apresentar informação geral do mesmo. A dashboard secundária terá como objetivo apresentar dados estatísticos relativos aos voos, entre eles, os destinos mais procurados, distribuição do número de voos ao longo do dia, etc. 
+						    <p> Dubai Dash, atualmente em desenvolvimento, tem como objetivo vir a ser um sistema que tem como principal foco a apresentação de uma diversa informação acerca do aeroporto internacional do Dubai e voos a ele associados, fornecendo diversas funcionalidades que permitam aos utilizadores visualizar informações relativas a voos em decurso, e também sobre aqueles que já terminaram, sendo derivada informação estatística a partir dos mesmos. </p>
+							<p>O sistema será composto principalmente por duas dashboards distintas, cada uma com o seu propósito. A dashboard principal será composta principalmente por um <b>mapa interativo</b> que permite ao utilizador visualizar os voos em decurso, a sua localização, e selecionar um voo específico para apresentar informação geral do mesmo. A dashboard secundária terá como objetivo apresentar <b>dados estatísticos</b> relativos aos voos.
 							</p>
 						</section><!--//docs-intro-->
 				    </header>
-				     <section class="docs-section" id="item-2-1">
+				     <section class="docs-section" id="item-2-1" style="height: 700px;">
 						<h2 class="section-heading">Personas</h2>
-						<p class="persona1Text">António Monteiro, 70 anos, reformado - António Monteiro é um piloto comercial reformado que durante os seus anos no ativo se apaixonou pelo Dubai. Sendo este um dos aeroportos com maior afluência no mundo, o António gosta de passar o seu tempo livre a observar e absorver informação sobre os aviões que estão a sobrevoar a cidade e ao mesmo tempo relembrar um bocado da cidade pela qual se apaixonou.</p>
-					
+						<p style="float: left;"><img src="assets/images/persona1.jpg" style="float:right;width:450px;height:250px;margin-right: 50px;"><p><b>António Monteiro, 70 anos, reformado</b></p>António Monteiro é um piloto comercial reformado que durante os seus anos no ativo se apaixonou pelo Dubai. Sendo este um dos aeroportos com maior afluência no mundo, o António gosta de passar o seu tempo livre a observar e absorver informação sobre os aviões que estão a sobrevoar a cidade e ao mesmo tempo recordar a cidade pela qual se apaixonou.</p>
 						<br></br>
-
-						<p class="persona1Text">Mohammed Omar, 43 anos, gerente - Mohammed Omar é gerente de uma empresa de transportes do Dubai. É da sua responsabilidade alocar o número necessário de veículos para fazer o transporte de passageiros do aeroporto para diversos pontos da cidade. Assim, os dados estatísticos acerca do fluxo de voos em diferentes espaços de tempo (hora, dia ou mês), ajudam na decisão da distribuição dos recursos e rotas ao longo de todo ano.
-						</p>
-					
-						<br></br>
-
-						<p class="persona1Text">Taaliah Allee,  30 anos, agente de viagens - Taaliah Allee é agente de uma agência de viagens do Dubai e está encarregue de  criar pacotes de viagens para os destinos mais procurados na cidade. Através dos dados estatísticos do sistema acerca dos destinos com mais voos, consegue selecionar os países mais procurados.
+						<p style="float: left;"><img src="assets/images/persona2.jpg" style="float:right;width:450px;height:250px;margin-right: 50px;"><p><b>Taaliah Allee, 30 anos, agente de viagens</b></p>Taaliah Allee é agente de uma agência de viagens do Dubai e está encarregue de criar pacotes de viagens para os destinos mais procurados na cidade. Através dos dados estatísticos do sistema acerca dos destinos com mais procura, consegue selecionar os países mais procurados e criar pacotes de acordo com as necessidades dos seus clientes.
 						</p>
 						<br></br>
 					</section><!--//section-->
 					
 					<section class="docs-section" id="item-2-2">
-						<!--<h2 class="section-heading">Cenários</h2>-->
+						<h2 class="section-heading">Cenários</h2>
+						<ul>
+							<li>O <b>António</b> está no seu tempo livre e acede à dashboard. Aí, consegue visualizar num mapa, em tempo real, a posição dos aviões que estão a sobrevoar o Dubai. Por curiosidade, clica num dos aviões para obter mais informações detalhadas acerca do mesmo. </li>
+							<li>Também o <b>António</b>, acede à dashboard mas agora para visualizar os dados da tabela de chegadas. O seu filho está a viajar para o Dubai e o António quer verificar que o seu voo já aterrou.</li>
+							<li>A agência de viagens da <b>Taaliah</b> pretende fazer uma campanha de pacotes de viagens com vários descontos. De forma a ir de encontro às preferências dos viajantes, a Taaliah analisa as estatísticas referentes aos destinos mais populares para então criar pacotes com descontos para esses destinos. </li>
+						  </ul>
+						
+					</section><!--//section-->
+				<!--//section-->
+			    </article><!--//docs-article-->
+				<article class="docs-article" id="section-3">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Requisitos</h1>
+					    <section class="docs-intro">
+						</section><!--//docs-intro-->
+				    </header>
+					<section class="docs-section" id="item-3-1">
+						<h2 class="section-heading">Perspetiva do Produto</h2>
+						<p>O foco deste produto é fornecer ao utilizador uma página web que fosse um género de Flightradar24 mas focado na área aérea do Dubai. Desta forma, permite ao utilizador ver os voos a sobrevoar essa área, obter informações desses voos, visualizar quais os voos a aterrar e a descolar. Além disso, fornece uma estatística sobre o país sobre o qual mais voos sobrevoam o Dubai.</p>
+					</section><!--//section-->
+					<section class="docs-section" id="item-3-2">
+						<h2 class="section-heading">Funcionalidades do Sistema</h2>
+						<p>Estas funcionalidades foram desenvolvidas de forma a atender as necessidades dos utilizadores finais.</p>
+						<ul>
+							<li>Visualização num mapa, em tempo real, a posição dos voos que sobrevoam o Dubai.</li>
+							<li>Fornecimento de informações detalhadas acerca de um determinado voo.</li>
+							<li>Fornecimento de estatísticas acerca do país de origem mais popular.</li>
+							<li>Notificação de um momento de aterragem/descolagem.</li>
+						</ul>
+					</section><!--//section-->
+					<section class="docs-section" id="item-3-3">
+						<h2 class="section-heading">Interfaces de Software</h2>
+						<p>O DubaiDash faz uso de várias tecnologias. No <b>frontend</b> existe uma aplicação web React. Já no <b>backend</b> temos duas aplicações Spring Boot, uma base de dados MySQL, e Kafka para transportar dados entre as duas aplicações Spring Boot. Uma das aplicações tem como objetivo obter os dados da OpenSky API REST e enviá-los para um tópico. A outra aplicação processa, guarda na base de dados e expõe os dados através de uma REST API para a aplicação web poder usá-los.
+						</p>
+					</section><!--//section-->
+					<section class="docs-section" id="item-3-4">
+						<h2 class="section-heading">Interfaces de Comunicação</h2>
+						<p>Como o DubaiDash é uma aplicação web, a sua interface de comunicação foca-se sobre o protocolo HTTP.</p>
+					</section><!--//section-->
+					<section class="docs-section" id="item-3-5">
+						<h2 class="section-heading">Requisitos de Qualidade</h2>
+						<p>Nesta secção encontram-se os requisitos de qualidade associados ao sistema desenvolvido.</p>
+						<h3 style="margin-top: 30px;">Requisitos de Usabilidade</h3>
+						<table class="table table-bordered">
+							<tr>
+								<th class="theme-bg-light" style="width: 90px; text-align: center;">USE-1</th>
+								<td>O sistema deverá permitir a visualizar em tempo real a localização dos aviões.
+								</td>
+							</tr>
+							<tr>
+								<th class="theme-bg-light" style="width: 90px; text-align: center;">USE-2</th>
+								<td>O layout da página deverá permitir ao utilizador navegar na mesma de forma rápida e intuitiva.
+								</td>
+							</tr>
+						</table>
+						<h3 style="margin-top: 30px;">Requisitos de Perfomance</h3>
+						<table class="table table-bordered">
+							<tr>
+								<th class="theme-bg-light" style="width: 90px; text-align: center;">PER-1</th>
+								<td>A informação dos voos na página deve ter no máximo um atraso de 30 segundos em relação ao que está disponível na API OpenSky.
+								</td>
+							</tr>
+						</table>
+						<h3 style="margin-top: 30px;">Requisitos de Disponibilidade</h3>
+						<table class="table table-bordered">
+							<tr>
+								<th class="theme-bg-light" style="width: 90px; text-align: center;">DSP-1</th>
+								<td>As funcionalidades disponibilizadas no sistema deverão estar disponíveis pelo menos 89% do tempo.
+
+								</td>
+							</tr>
+						</table>
 						
 					</section><!--//section-->
 				<!--//section-->
 			    </article><!--//docs-article-->
 
-				<article class="docs-article" id="section-3">
+				<article class="docs-article" id="section-4">
 				    <header class="docs-header">
 					    <h1 class="docs-heading">Arquitetura</h1>
 					    <section class="docs-intro">
 						    <img src="./assets/images/ArquiteturaES.png" width="1100" height="800">
+						</section><!--//docs-intro-->
+				    </header>
+				<!--//section-->
+			    </article><!--//docs-article-->
+				<article class="docs-article" id="section-5">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Developer</h1>
+					    <section class="docs-intro">
+							Nesta área será possível obter um <i>insight</i> no trabalho feito durante o desenvolvimento, incluindo as plataformas usadas, <i>runtimes</i>, portas, descrições sobre o <i>flow</i> de dados, entre outros.
+						</section><!--//docs-intro-->
+						<br></br>
+						<p>Inicialmente, após o processo de levantamento de requisitos e da escolha de uma arquitetura adequada aos mesmos, foi necessário proceder à escolha das ferramentas a serem utilizadas. A nível de <b>backend</b> foi optado implementar o sistema usando a plataforma <b>Spring Boot</b>, dado que permite criar a base do projeto de forma rápida e eficiente. Para além disso, dado que já tinha sido adquirida experiência nesta framework no desenvolvimento do Lab Project acabou também por ser um fator significativo, dado que poderia ser facilmente adaptado, permitindo avançar mais rápido nesta fase do trabalho.</p>
+						<p>Relativamente ao <b>frontend</b>, foi escolhido o <b>ReactJS</b>, dado que no contexto da aplicação é importante ter uma rápida atualização dos aviões apresentados no website, como o ReactJS permite atualizar componentes individualmente, de forma rápida, eficiente e leve, dado que não são necessários muitos recursos. Estes componentes permitem desenvolver módulos em paralelo e facilitam o desenvolvimento do website, pois é possível renderizar código HTML. Para além de todos os benefícios que encontrámos, o facto de ser uma das web frameworks mais utilizadas também teve grande peso nesta decisão.</p>
+						<p>Tal como já referido anteriormente, o sistema foi desenvolvido através do uso da plataforma Spring Boot, no entanto, ao longo de todo o desenvolvimento do sistema, com o intuito de implementar as suas diversas funcionalidades, foram usadas diversas outras ferramentas, entre as quais, por um lado, se destacam, o <b>Docker</b>, <b>Docker Registry</b>, <b>Artifactory</b> e <b>Jenkins</b>, que auxiliam o processo de  automatização de testes e deployment do sistema. Por outro lado, o uso da plataforma <b>Kafka</b> permite que os diversos componentes do sistema comuniquem entre si de forma rápida, através de mensagens que são utilizadas para, por exemplo, para informar os aviões que estão a chegar ou a partir. </p>
+						<p>Para além das ferramentas acima enumeradas, apesar de não estar relacionado com o runtime, o <b>logstash</b> é também de elevada importância. O seu uso permite uma melhor gestão dos logs, facilitando o processo de verificação e validação do estado do sistema. </p>
+						<p>De seguida apresentam-se os nomes e portas que se encontram associadas a algumas das ferramentas enumeradas, bem como as portas associadas a alguns dos microsserviços que compõem o sistema, de notar que alguns recursos são partilhados entre os diversos grupos como a <b>base de dados</b>, <b>zookeeper</b>, <b>kafka</b>, <b>elasticsearch</b> e <b>kibana</b>.</p>
+						<table class="table table-bordered">
+							<tr>
+								<th class="theme-bg-light" style="width: 300px; text-align: center;">Microserviço dubaidash</th>
+								<td>192.168.160.87:20003</td>
+							</tr>
+							<tr>
+								<th class="theme-bg-light" style="width: 90px; text-align: center;">Microserviço dubaidashapi</th>
+								<td>192.168.160.87:20004</td>
+							</tr>
+							<tr>
+								<th class="theme-bg-light" style="width: 90px; text-align: center;">Frontend</th>
+								<td>192.168.160.87:20005</td>
+							</tr>
+							<tr>
+								<th class="theme-bg-light" style="width: 90px; text-align: center;">Base de dados MySQL</th>
+								<td>192.168.160.18:3306</td>
+							</tr>
+							<tr>
+								<th class="theme-bg-light" style="width: 90px; text-align: center;">Kafka</th>
+								<td>192.168.160.18:9092</td>
+							</tr>
+							<tr>
+								<th class="theme-bg-light" style="width: 90px; text-align: center;">Elastic Search - Kibana</th>
+								<td>192.168.160.18:9200</td>
+							</tr>
+							<tr>
+								<th class="theme-bg-light" style="width: 90px; text-align: center;">Docker registry</th>
+								<td>192.168.160.48:5000</td>
+							</tr>
+							<tr>
+								<th class="theme-bg-light" style="width: 90px; text-align: center;">Logstash</th>
+								<td>192.168.160.87:20007</td>
+							</tr>
+							<tr>
+								<th class="theme-bg-light" style="width: 90px; text-align: center;">Jenkins</th>
+								<td>192.168.160.20:9090</td>
+							</tr>
+							<tr>
+								<th class="theme-bg-light" style="width: 90px; text-align: center;">Artifactory</th>
+								<td>192.168.160.49:8082</td>
+							</tr>
+						</table>
+				    </header>
+				<!--//section-->
+			    </article><!--//docs-article-->
+				<article class="docs-article" id="section-6">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Testes</h1>
+					    <section class="docs-intro">
+						</section><!--//docs-intro-->
+				    </header>
+				<!--//section-->
+			    </article><!--//docs-article-->
+				<article class="docs-article" id="section-7">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Operações</h1>
+					    <section class="docs-intro">
+							Nesta área, é apresentada a documentação relativa às operações que permitiram <b><i>continuous integration</i></b>. Aqui é possível encontrar informação acerca de todos os métodos de DevOps que implementámos, incluindo Jenkins, Dockerfile, testes, monitorização e todas as restantes ferramentas utilizadas.
+						</section><!--//docs-intro-->
+						<br></br>
+						<p>No contexto das operações do sistema, o <b>Jenkins</b> foi fundamental no processo de desenvolvimento, dado que permite efetuar <i>continuous integration</i>, e além disso permitiu ainda fazer o <i>deployment</i> automático para um ambiente de produção. O pipeline desenvolvido está dividido em <b>cinco stages genéricos: ‘Cloning repository’, ‘Testing’, ‘Build’, ‘Build and deploy images to registry’ e ‘Remote SSH’</b>. Cada um destes stages usa diferentes comandos, associados à função pretendida na stage, estas funções são apresentadas de seguida:
+						</p>
+						<ul>
+							<li><b>Cloning repository</b>: este passo efetua o clone do repositório com o código fonte;
+							</li>
+							<li><b>Testing</b>: cada um dos microsserviços é testado e uma vez que ambos foram desenvolvidos em SpringBoot com maven, é executado o comando mvn test.
+							</li>
+							<li><b>Build</b>: como o nome indica é feito o build de cada microsserviço garantindo que não existem erros durante o mesmo, visto que os testes foram efetuados no stage anterior não é necessário voltar a efetuá-los, além disso é importante referir que o artefato resultante é colocado no artifactory. Isto é possível através do comando mvn deploy -DskipTests.
+							</li>
+							<li><b>Build and deploy images to registry</b>: nesta fase é utilizado o docker, cada um dos microsserviços tem um Dockerfile associado que faz um multi-stage build para manter no mínimo o espaço ocupado pelas imagens. Após o build ser efetuado o docker registry é utilizado para guardar imagens noutro local, isto permite uma melhor gestão de recursos, além de fornecer uma solução mais elegante. Resumindo, aqui é feito o build da imagem docker e push para registry de cada microserviço.
+							</li>
+							<li><b>Remote SSH</b>: este último passo efetua o deploy dos microsserviços na máquina playground. Através do comando sshagent é efetuada a ligação à máquina e, inicialmente, são removidas as imagens antigas. De seguida, é efetuado o pull das imagens do registry e inicialização dos containers. Para isto é necessário colocar os ficheiros e diretórios necessários para os containers e o ficheiro docker-compose.yml através do comando scp(secure copy). A utilização de docker compose permite simplificar a inicialização de containers, sendo necessário apenas uma linha para correr todos os containers
+							</li>
+						</ul>
+				    </header>
+				<!--//section-->
+			    </article><!--//docs-article-->
+				<article class="docs-article" id="section-8">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Considerações finais</h1>
+					    <section class="docs-intro">
 						</section><!--//docs-intro-->
 				    </header>
 				<!--//section-->
